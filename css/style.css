@@ -1,0 +1,162 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos de la cabecera */
+  header {
+    text-align: center;
+  }
+  
+  header img {
+    max-width: 100%;
+  }
+  
+  /* Estilos de la sección de servicios */
+  section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  section ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  section li:before {
+    content: "•";
+    margin-right: 5px;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 767px) {
+    section {
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos para escritorios */
+  @media (min-width: 768px) {
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+  }
+/* Estilos para el footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  /*******************************************************/
+  /* Estilos para el toolbar */
+nav {
+    background-color: #cee1f2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul
+  /**********************************************************/
+  /* Estilos para el formulario de contacto */
+  footer form {
+    background-color: #cee1f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    transition: transform 1s ease-in-out;
+    transform: translateX(100%);
+  }
+  
+  footer form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  footer form input,
+  footer form textarea {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  footer form button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 767px) {
+    footer form {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+  
+  /* Estilos para escritorios */
+  @media (min-width: 768px) {
+    footer form {
+      margin: 0 auto;
+      transform: translateX(0);
+    }
+  }
+    
