@@ -13,6 +13,7 @@
 		<h1>Jorge Tejada</h1>
 	</header>
     <nav>
+		<button class="menu-btn">&#9776;</button>
 		<ul>
 			<li><a href="#home">Inicio</a></li>
 			<li><a href="#about">Acerca de mi</a></li>
@@ -59,5 +60,20 @@
             </form>
         </section>
 	</footer>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		  var menuBtn = document.querySelector('.menu-btn');
+		  var nav = document.querySelector('nav');
+	  
+		  menuBtn.addEventListener('click', function () {
+			nav.classList.toggle('show');
+		  });
+		});
+		$(window).scroll(function() {
+ 		var yPos = -($(window).scrollTop() / 10);
+ 		$('body').css('background-position', 'center '+ yPos + 'px');
+		});
+
+	</script>
 </body>
 </html>
