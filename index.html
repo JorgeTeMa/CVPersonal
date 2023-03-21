@@ -60,7 +60,7 @@
     <footer>
         <section id="contact">
             <h2>Contacto</h2>
-            <form>
+            <form action="/sendmail" method="POST">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -101,5 +101,10 @@
  		$('body').css('background-position', 'center '+ yPos + 'px');
 		});
 	</script>
+	<!-- WhatsApp Button -->
+	<a href="https://wa.me/593963141757" target="_blank" id="whatsapp-button">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png" alt="WhatsApp Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 5px;">
+	Enviar mensaje a WhatsApp
+	</a>
 </body>
 </html>
