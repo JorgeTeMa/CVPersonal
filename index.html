@@ -20,6 +20,7 @@
 			<li><a href="#projects">Proyectos</a></li>
 			<li><a href="#contact">Contacto</a></li>
 		</ul>
+		<button id="language-toggle">Cambiar idioma</button>
 	</nav>
 	<main>
 		<section id="home">
@@ -100,6 +101,22 @@
  		var yPos = -($(window).scrollTop() / 10);
  		$('body').css('background-position', 'center '+ yPos + 'px');
 		});
+		const languageToggle = document.getElementById('language-toggle');
+  		const languageContents = document.querySelectorAll('.language-content');
+  
+  		let currentLanguage = 'en'; // Idioma predeterminado
+  
+ 		 languageToggle.addEventListener('click', () => {
+    	currentLanguage = (currentLanguage === 'en') ? 'es' : 'en';
+    
+    	languageContents.forEach(content => {
+    	  if (content.dataset.lang === currentLanguage) {
+    	    content.style.display = 'block';
+    	  } else {
+        content.style.display = 'none';
+      }
+    });
+  });
 	</script>
 	<!-- WhatsApp Button -->
 	<a href="https://wa.me/593963141757" target="_blank" id="whatsapp-button">
